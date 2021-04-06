@@ -89,8 +89,8 @@ io.on('connection', socket => {
     const channel = await client.channels.fetch(process.env.ID_CHANNEL_LOG);
     const user = await client.users.fetch(someKeys.get(key));
     webhook.send(`**Join:** ${user.username}#${user.discriminator} (${user.id})`, {
-      username: "MyChat",
-      avatarURL: 'https://i.imgur.com/TVaNWMn.png'
+      username: "Coretus Logs",
+      avatarURL: 'https://cdn.discordapp.com/attachments/820087914284318798/829015683131899914/perfil3.PNG'
     });
 
     socket.userId = someKeys.get(key);
