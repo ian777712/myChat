@@ -109,8 +109,8 @@ io.on('connection', socket => {
     if (!user) return;
     const channel = await client.channels.fetch(process.env.ID_CHANNEL_LOG);
     webhook.send(`**Leave:** ${user.username}#${user.discriminator} (${user.id})`, {
-      username: 'MyChat',
-      avatarURL: 'https://i.imgur.com/TVaNWMn.png'
+      username: 'AquariusChat',
+      avatarURL: 'https://cdn.discordapp.com/attachments/820087914284318798/829013105710334013/aquarius.jpeg'
     });
 
     channel.send({
